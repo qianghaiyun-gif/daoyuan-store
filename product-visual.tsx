@@ -1,0 +1,3 @@
+/** Abstract CSS and SVG product visual used by the local mock catalog. */
+import {Orbit} from './symbols';
+export function ProductVisual({color,name}:{color:string;name:string}){return <div className="relative aspect-[4/5] overflow-hidden bg-[#171614] lattice"><Orbit/><div className="absolute left-1/2 top-1/2 h-32 w-24 -translate-x-1/2 -translate-y-1/2 rotate-[18deg] rounded-[45%] border border-white/30 shadow-[0_0_55px_12px_var(--c)]" style={{'--c':color,background:`linear-gradient(125deg,${color},#101010)`} as React.CSSProperties}/><span className="absolute bottom-4 left-4 text-[9px] uppercase tracking-[.2em] text-pearl/45">11:11 / {name}</span></div>}
