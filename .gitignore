@@ -1,0 +1,12 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+
+# Local delivery archives and scratch work
+outputs/
+work/
+
+# Local platform files
+.vercel/
+.env*.local
